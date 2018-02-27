@@ -62,5 +62,6 @@ RUN yum install -y \
     && yum autoremove -y \
     && yum clean all \
     && ln -s /usr/local/openresty/nginx/sbin/nginx /usr/bin/nginx \
+    && ln -s /usr/local/openresty/bin/resty /usr/bin/resty \
     && cd /tmp \
     && rm -Rf ./*
