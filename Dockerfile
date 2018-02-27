@@ -53,8 +53,6 @@ RUN yum install -y \
     && curl -fSL https://openresty.org/download/openresty-${RESTY_VERSION}.tar.gz -o openresty.tar.gz \
     && tar xzf ./openresty.tar.gz \
     && cd /tmp/openresty-${RESTY_VERSION} \
-    && tar xzf ./openresty.tar.gz \
-    && cd /tmp/openresty-${RESTY_VERSION} \
     && ./configure ${RESTY_CONFIG_OPTIONS} \
     && gmake \
     && gmake install \
